@@ -61,7 +61,13 @@ fun FoodScreen(open: (Screen) -> Unit) {
             item { RestaurantList() }
         }
         FloatingCartBar("3 items", "Dari 2 Resto", "Rp81.000", Modifier.align(Alignment.BottomCenter).padding(bottom = 82.dp, start = 16.dp, end = 16.dp))
-        AppBottomBar(selected = "Home", onHome = { open(Screen.Home) }, onOrders = {}, onWallet = {}, onInbox = {}, onAccount = { open(Screen.Profile) })
+        AppBottomBar(
+        selected = "Home",
+        onHome = { open(Screen.Home) },
+        onPromos = { open(Screen.Promos) },
+        onOrders = { open(Screen.Orders) },
+        onChat = { open(Screen.Chat) }
+    )
     }
 }
 

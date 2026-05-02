@@ -66,7 +66,13 @@ fun ProfileScreen(open: (Screen) -> Unit) {
             item { ProfileMenu() }
             item { Text("GoApp v4.52.1", color = Color(0xFFA0A7B3), fontSize = 16.sp, textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth()) }
         }
-        AppBottomBar(selected = "Account", onHome = { open(Screen.Home) }, onOrders = {}, onWallet = {}, onInbox = {}, onAccount = {})
+        AppBottomBar(
+        selected = "Account",
+        onHome = { open(Screen.Home) },
+        onPromos = { open(Screen.Promos) },
+        onOrders = { open(Screen.Orders) },
+        onChat = { open(Screen.Chat) }
+    )
     }
 }
 

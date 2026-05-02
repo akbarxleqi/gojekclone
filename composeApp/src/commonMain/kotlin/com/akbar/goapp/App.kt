@@ -112,6 +112,9 @@ import com.akbar.goapp.features.resto.RestaurantDetailScreen
 import com.akbar.goapp.features.profile.ProfileScreen
 import com.akbar.goapp.features.auth.LoginScreen
 import com.akbar.goapp.features.auth.RegisterScreen
+import com.akbar.goapp.features.order.OrderScreen
+import com.akbar.goapp.features.promo.PromoScreen
+import com.akbar.goapp.features.chat.ChatScreen
 
 @Composable
 fun App() {
@@ -139,6 +142,9 @@ fun App() {
                         Screen.Mart -> MartScreen { screen = it }
                         Screen.Resto -> RestaurantDetailScreen { screen = it }
                         Screen.Profile -> ProfileScreen { screen = it }
+                        Screen.Orders -> OrderScreen { screen = it }
+                        Screen.Promos -> PromoScreen { screen = it }
+                        Screen.Chat -> ChatScreen { screen = it }
                         Screen.Login -> LoginScreen { screen = it }
                         Screen.Register -> RegisterScreen { screen = it }
                     }

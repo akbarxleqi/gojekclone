@@ -45,6 +45,7 @@ import androidx.compose.material.icons.filled.ShoppingBasket
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.AccountBalanceWallet
 import androidx.compose.material.icons.outlined.ChatBubbleOutline
+import androidx.compose.material.icons.outlined.ConfirmationNumber
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.ReceiptLong
@@ -174,10 +175,9 @@ fun SearchPill(placeholder: String, icon: ImageVector, modifier: Modifier = Modi
 fun AppBottomBar(
     selected: String,
     onHome: () -> Unit,
+    onPromos: () -> Unit,
     onOrders: () -> Unit,
-    onWallet: () -> Unit,
-    onInbox: () -> Unit,
-    onAccount: () -> Unit
+    onChat: () -> Unit
 ) {
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.BottomCenter) {
         Row(
@@ -185,15 +185,14 @@ fun AppBottomBar(
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp))
                 .background(Color.White)
-                .padding(horizontal = 14.dp, vertical = 12.dp)
+                .padding(horizontal = 8.dp, vertical = 6.dp)
                 .navigationBarsPadding(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            BottomItem("Home", Icons.Outlined.Home, selected == "Home", onHome)
-            BottomItem("Orders", Icons.Outlined.ReceiptLong, selected == "Orders", onOrders)
-            BottomItem("Wallet", Icons.Outlined.AccountBalanceWallet, false, onWallet)
-            BottomItem("Inbox", Icons.Outlined.ChatBubbleOutline, false, onInbox)
-            BottomItem("Account", Icons.Outlined.Person, selected == "Account", onAccount)
+            BottomItem("Beranda", Icons.Outlined.Home, selected == "Beranda", onHome)
+            BottomItem("Promo", Icons.Outlined.ConfirmationNumber, selected == "Promo", onPromos)
+            BottomItem("Aktivitas", Icons.Outlined.ReceiptLong, selected == "Aktivitas", onOrders)
+            BottomItem("Chat", Icons.Outlined.ChatBubbleOutline, selected == "Chat", onChat)
         }
     }
 }
@@ -202,14 +201,13 @@ fun AppBottomBar(
 fun BottomItem(label: String, icon: ImageVector, selected: Boolean, onClick: () -> Unit) {
     Column(
         Modifier
-            .clip(RoundedCornerShape(14.dp))
+            .clip(RoundedCornerShape(8.dp))
             .clickable(onClick = onClick)
-            .background(if (selected) Color(0xFFE9FFF6) else Color.Transparent)
-            .padding(horizontal = 12.dp, vertical = 8.dp),
+            .padding(horizontal = 12.dp, vertical = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Icon(icon, null, tint = if (selected) Color(0xFF009B68) else Color(0xFF98A2B3))
-        Text(label, color = if (selected) Color(0xFF009B68) else Color(0xFF98A2B3), fontSize = 11.sp, fontWeight = FontWeight.Bold)
+        Icon(icon, null, tint = if (selected) Color(0xFF009B68) else Color(0xFF98A2B3), modifier = Modifier.size(24.dp))
+        Text(label, color = if (selected) Color(0xFF009B68) else Color(0xFF98A2B3), fontSize = 10.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium)
     }
 }
 

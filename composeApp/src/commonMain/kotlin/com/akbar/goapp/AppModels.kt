@@ -10,6 +10,9 @@ enum class Screen(val label: String) {
     Send("GoSend"),
     Mart("GoMart"),
     Resto("Resto"),
+    Orders("Orders"),
+    Promos("Promos"),
+    Chat("Chat"),
     Profile("Profile"),
     Login("Login"),
     Register("Register")

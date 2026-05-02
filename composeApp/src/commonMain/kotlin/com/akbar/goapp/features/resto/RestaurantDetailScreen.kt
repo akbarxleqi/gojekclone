@@ -53,8 +53,7 @@ fun RestaurantDetailScreen(open: (Screen) -> Unit) {
             item { MenuSection("Paket Hemat", true) }
             item { GridMenuSection() }
         }
-        FloatingCartBar("2 items | Rp60.000", "Mas Budi, Kemang", "View Basket", Modifier.align(Alignment.BottomCenter).padding(bottom = 82.dp, start = 16.dp, end = 16.dp))
-        AppBottomBar(selected = "Orders", onHome = { open(Screen.Home) }, onOrders = {}, onWallet = {}, onInbox = {}, onAccount = { open(Screen.Profile) })
+        FloatingCartBar("2 items | Rp60.000", "Mas Budi, Kemang", "View Basket", Modifier.align(Alignment.BottomCenter).padding(bottom = 24.dp, start = 16.dp, end = 16.dp))
     }
 }
 

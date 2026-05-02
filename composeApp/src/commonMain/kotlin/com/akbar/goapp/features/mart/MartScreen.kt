@@ -63,7 +63,13 @@ fun MartScreen(open: (Screen) -> Unit) {
             item { ProductRowSection("Pilihan Segar Hari Ini", freshDeals, false) }
         }
         FloatingCartBar("2 item | Rp45.000", "Dari Toko Terdekat", "Lihat Keranjang", Modifier.align(Alignment.BottomCenter).padding(bottom = 82.dp, start = 16.dp, end = 16.dp))
-        AppBottomBar(selected = "Home", onHome = { open(Screen.Home) }, onOrders = {}, onWallet = {}, onInbox = {}, onAccount = { open(Screen.Profile) })
+        AppBottomBar(
+        selected = "Home",
+        onHome = { open(Screen.Home) },
+        onPromos = { open(Screen.Promos) },
+        onOrders = { open(Screen.Orders) },
+        onChat = { open(Screen.Chat) }
+    )
     }
 }
 
