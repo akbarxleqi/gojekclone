@@ -1,0 +1,88 @@
+
+> Configure project :composeApp
+w: Kotlin Multiplatform <-> Android Gradle Plugin compatibility issue:
+The applied Android Gradle Plugin version (8.13.2) is higher 
+than the maximum known to the Kotlin Gradle Plugin.
+Tooling stability in such configuration isn't tested, please report encountered issues to https://kotl.in/issue
+
+Minimum supported Android Gradle Plugin version: 7.1
+Maximum tested Android Gradle Plugin version: 8.5
+
+To suppress this message add 'kotlin.mpp.androidGradlePluginCompatibility.nowarn=true' to your gradle.properties
+
+w: The following Kotlin/Native targets cannot be built on this machine and are disabled:
+iosArm64, iosSimulatorArm64, iosX64
+To hide this message, add 'kotlin.native.ignoreDisabledTargets=true' to the Gradle properties.
+
+
+> Task :composeApp:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :composeApp:convertXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :composeApp:copyNonXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :composeApp:prepareComposeResourcesTaskForAndroidMain NO-SOURCE
+> Task :composeApp:generateResourceAccessorsForAndroidMain NO-SOURCE
+> Task :composeApp:convertXmlValueResourcesForCommonMain NO-SOURCE
+> Task :composeApp:copyNonXmlValueResourcesForCommonMain NO-SOURCE
+> Task :composeApp:prepareComposeResourcesTaskForCommonMain NO-SOURCE
+> Task :composeApp:generateResourceAccessorsForCommonMain NO-SOURCE
+> Task :composeApp:generateActualResourceCollectorsForAndroidMain
+> Task :composeApp:generateComposeResClass
+> Task :composeApp:generateExpectResourceCollectorsForCommonMain
+> Task :composeApp:convertXmlValueResourcesForAndroidDebug NO-SOURCE
+> Task :composeApp:copyNonXmlValueResourcesForAndroidDebug NO-SOURCE
+> Task :composeApp:prepareComposeResourcesTaskForAndroidDebug NO-SOURCE
+> Task :composeApp:generateResourceAccessorsForAndroidDebug NO-SOURCE
+> Task :composeApp:preBuild UP-TO-DATE
+> Task :composeApp:preDebugBuild UP-TO-DATE
+> Task :composeApp:processDebugNavigationResources
+> Task :composeApp:checkDebugAarMetadata
+> Task :composeApp:generateDebugResValues
+> Task :composeApp:compileDebugNavigationResources
+> Task :composeApp:mapDebugSourceSetPaths
+> Task :composeApp:generateDebugResources
+> Task :composeApp:packageDebugResources
+> Task :composeApp:createDebugCompatibleScreenManifests
+> Task :composeApp:extractDeepLinksDebug
+> Task :composeApp:processDebugMainManifest
+> Task :composeApp:mergeDebugResources
+> Task :composeApp:parseDebugLocalResources
+> Task :composeApp:processDebugManifest
+> Task :composeApp:processDebugManifestForPackage
+> Task :composeApp:processDebugResources
+
+> Task :composeApp:compileDebugKotlinAndroid
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/AppComponents.kt:193:49 'val Icons.Outlined.ReceiptLong: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Outlined.ReceiptLong.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/AppComponents.kt:234:28 'val Icons.Filled.KeyboardArrowRight: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.KeyboardArrowRight.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/auth/AuthScreens.kt:60:13 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/auth/AuthScreens.kt:62:13 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/auth/AuthScreens.kt:81:58 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/auth/AuthScreens.kt:148:9 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/food/FoodScreen.kt:79:38 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/home/HomeScreen.kt:170:41 'val Icons.Filled.DirectionsBike: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.DirectionsBike.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/mart/MartScreen.kt:58:57 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/profile/ProfileScreen.kt:63:58 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/profile/ProfileScreen.kt:116:42 'val Icons.Filled.Help: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Help.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/profile/ProfileScreen.kt:121:41 'val Icons.Filled.ExitToApp: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ExitToApp.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/profile/ProfileScreen.kt:131:28 'val Icons.Filled.KeyboardArrowRight: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.KeyboardArrowRight.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/profile/ProfileScreen.kt:133:5 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/resto/RestaurantDetailScreen.kt:50:69 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:56:59 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:82:9 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:117:102 'val Icons.Filled.DirectionsBike: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.DirectionsBike.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:118:110 'val Icons.Filled.DirectionsBike: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.DirectionsBike.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:120:9 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/ride/RideScreen.kt:125:38 'val Icons.Filled.KeyboardArrowRight: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.KeyboardArrowRight.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/send/SendScreen.kt:56:53 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/send/SendScreen.kt:56:78 'val Icons.Filled.Help: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Help.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/send/SendScreen.kt:73:9 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+w: file:///home/akbar/AndroidStudioProjects/gojek/composeApp/src/commonMain/kotlin/com/akbar/goapp/features/send/SendScreen.kt:111:9 'fun Divider(modifier: Modifier = ..., thickness: Dp = ..., color: Color = ...): Unit' is deprecated. Renamed to HorizontalDivider.
+
+[Incubating] Problems report is available at: file:///home/akbar/AndroidStudioProjects/gojek/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 16s
+19 actionable tasks: 19 executed

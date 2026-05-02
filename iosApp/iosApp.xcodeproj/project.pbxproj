@@ -1,0 +1,134 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* BEGIN PBXBuildFile */
+		A1B2C3D4E5F601/* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F602/* iOSApp.swift */; };
+		A1B2C3D4E5F603/* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F604/* ContentView.swift */; };
+/* END PBXBuildFile */
+
+/* BEGIN PBXFileReference */
+		A1B2C3D4E5F602/* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F604/* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* END PBXFileReference */
+
+/* BEGIN PBXGroup */
+		A1B2C3D4E5F605/* CustomGroup */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F606/* iosApp */,
+				A1B2C3D4E5F607/* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F606/* iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F602/* iOSApp.swift */,
+				A1B2C3D4E5F604/* ContentView.swift */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+/* END PBXGroup */
+
+/* BEGIN PBXNativeTarget */
+		A1B2C3D4E5F608/* iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F609/* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildPhases = (
+				A1B2C3D4E5F60A/* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosApp;
+			productName = iosApp;
+			productReference = A1B2C3D4E5F60B/* iosApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* END PBXNativeTarget */
+
+/* BEGIN PBXProject */
+		A1B2C3D4E5F60C/* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A1B2C3D4E5F608 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D4E5F60D/* Build configuration list for PBXProject "iosApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D4E5F605/* CustomGroup */;
+			productRefGroup = A1B2C3D4E5F607/* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D4E5F608/* iosApp */,
+			);
+		};
+/* END PBXProject */
+
+/* BEGIN PBXSourcesBuildPhase */
+		A1B2C3D4E5F60A/* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F601/* iOSApp.swift in Sources */,
+				A1B2C3D4E5F603/* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* END PBXSourcesBuildPhase */
+
+/* BEGIN XCBuildConfiguration */
+		A1B2C3D4E5F60E/* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.goapp.iosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* END XCBuildConfiguration */
+
+/* BEGIN XCConfigurationList */
+		A1B2C3D4E5F609/* Build configuration list for PBXNativeTarget "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F60E/* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* END XCConfigurationList */
+	};
+	rootObject = A1B2C3D4E5F60C/* Project object */;
+}
